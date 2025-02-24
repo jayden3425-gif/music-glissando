@@ -51,7 +51,7 @@ namespace music {
     }
     
     //% group="Glizz"
-    //% block="glizz $midi_note to $to for $ms $mode"
+    //% block="glizz $midi_note notes $notes for $ms $mode"
     //% toolboxParent=music_playable_play
     //% toolboxParentArgument=toPlay
     //% parts="headphone"
