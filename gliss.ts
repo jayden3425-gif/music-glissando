@@ -17,8 +17,8 @@ function midi_to_hz(midi: number) {
     }
     return hz
 }
-function glizz(midi_note: number, to: number, mode: GlizzType, ms: number) {
-    const num = midi_note - to
+function glizz(midi_note: number, notes: number, mode: GlizzType, ms: number) {
+    const num = midi_note - notes
     if (mode == GlizzType.Up) {
         const niu = num
         for (let index = 0; index <= niu; index++) {
@@ -58,7 +58,7 @@ namespace music {
     //% duplicateShadowOnDrag
     //% ms.shadow=device_beat
     //% inlineInputMode=inline
-    export function glizzPlayable(midi_note: number, to: number, mode: GlizzType, ms: number): Playable {
-        return new GlizzPlayable(midi_note, to, mode, ms)
+    export function glizzPlayable(midi_note: number, notes: number, mode: GlizzType, ms: number): Playable {
+        return new GlizzPlayable(midi_note, notes, mode, ms)
     }
 }
