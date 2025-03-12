@@ -6,7 +6,7 @@ let midi_not = 0
 let hz = 0
 function midi_to_hz(midi: number) {
     midi_not = midi
-    if (midi_not > 108) {
+    if (midi_not > 112) {
         music.rest(music.beat(BeatFraction.Half))
     } else if (midi_not < 21) {
         music.rest(music.beat(BeatFraction.Half))
